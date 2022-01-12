@@ -7,7 +7,7 @@ ADD super_netperf /sbin/
 
 RUN \
 	apk add --update curl build-base bash && \
-	curl -LO ftp://ftp.netperf.org/netperf/netperf-2.7.0.tar.gz && \
+	curl -LO https://github.com/HewlettPackard/netperf/archive/refs/tags/netperf-2.7.0.tar.gz && \
 	tar -xzf netperf-2.7.0.tar.gz  && \
 	cd netperf-2.7.0 && ./configure --prefix=/usr && make && make install && \
 	rm -rf netperf-2.7.0 netperf-2.7.0.tar.gz && \
