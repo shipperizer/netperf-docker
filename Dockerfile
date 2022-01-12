@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.15
 MAINTAINER tgraf@noironetworks.com
 
 ADD super_netperf /sbin/
