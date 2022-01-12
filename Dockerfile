@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM alpine:3.15
+FROM --platform=$BUILDPLATFORM alpine:3.6.5
 MAINTAINER tgraf@noironetworks.com
 
 LABEL org.opencontainers.image.source=https://github.com/shipperizer/netperf-docker
