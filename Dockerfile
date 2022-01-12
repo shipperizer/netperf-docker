@@ -1,6 +1,8 @@
 FROM alpine:3.15
 MAINTAINER tgraf@noironetworks.com
 
+LABEL org.opencontainers.image.source=https://github.com/shipperizer/netperf-docker
+
 ADD super_netperf /sbin/
 
 RUN \
